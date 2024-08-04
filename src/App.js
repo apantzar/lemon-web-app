@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
 import { BrowserRouter as Router } from "react-router-dom";
+import Menu from "./components/Menu";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Nav />
         <Main />
+        <Menu />
       </Router>
     </div>
   );
