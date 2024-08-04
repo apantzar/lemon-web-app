@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
+      <>
+        <Nav />
+        <Header />
+      </>
     </div>
   );
 }
