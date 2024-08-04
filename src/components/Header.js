@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import banner from "../assets/images/general/restauranfood.jpg";
 
 const Header = () => {
   return (
@@ -10,14 +11,13 @@ const Header = () => {
           <h3>Thessaloniki, Greece</h3>
           <p>Just a demo project using React & Redux</p>
 
-          <button
-            className="btn btn-primary"
-            onClick={() => {
-              window.location.href = "/booking";
-            }}
-          >
-            Reserve Table
-          </button>
+          <Link to="/booking" aria-label="On Click">
+            <button>Reserve Table</button>
+          </Link>
+        </div>
+
+        <div className="banner-img">
+          <img src={banner} alt="restaurant" />
         </div>
       </section>
     </header>
